@@ -18,6 +18,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/login', function () {
+    return view('public.login');
+});
+
+Route::get('/landing', function () {
+    return view('public.landing');
+});
+
 //localhost/pizza/cardapio
 Route::get('/cardapio', function () {  //criando uma nova rota
     return view('cardapio');
@@ -31,3 +39,4 @@ Route::get('/cardapio', function () {  //criando uma nova rota
 Route::get('/home', function () {  //criando uma nova rota
     return view('home');
 });
+?>

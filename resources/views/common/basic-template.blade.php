@@ -1,10 +1,8 @@
-@include('cabecalho');
+@include('common.cabecalho');
 
+@yeld('content');
 
-@yeld('content');  //cria um lugar
-
-
-@include('rodape');
+@include('common.rodape');
 
 
 
